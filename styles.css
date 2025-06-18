@@ -1,0 +1,182 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: green; */
+  font-family: monospace;
+}
+
+.full-name {
+  background-color: lightblue;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.information {
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+  margin-top: 0;
+}
+
+.photo {
+  background-color: aqua;
+}
+
+.photo-container {
+  text-align: center;
+}
+
+.icons-container {
+  background-color: red;
+  text-align: center;
+}
+
+.svg-icon {
+  background-color: orange;
+  width: 75x;
+  height: 75px;
+}
+
+.about {
+  background-color: aqua;
+}
+
+.about-paragraph {
+  background-color: red;
+}
+
+.education-details {
+  /* background-color: lightgreen; */
+}
+
+.education {
+  background-color: aqua;
+}
+
+.school-dates {
+  background-color: red;
+  margin-right: 20px;
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.education-description {
+  background-color: lightgreen;
+}
+
+.school-name {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.degree-name {
+  font-size: 15px;
+  background-color: orange;
+  margin-top: 0;
+}
+
+.education-block {
+  display: grid;
+  grid-template-columns: 30% 62.5%;
+  grid-column-gap: 10px;
+
+}
+
+.work-experience {
+  background-color: aqua
+}
+
+.employment-dates {
+  background-color: red;
+  margin-right: 20px;
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.position {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.employer-name {
+  font-size: 15px;
+  background-color: orange;
+  margin-top: 0;
+}
+
+.responsibilities {
+  background-color: lightgreen
+}
+
+.work-block {
+  display: grid;
+  grid-template-columns: 30% 62.5%;
+  grid-column-gap: 10px;
+}
+
+.awards {
+  background-color: aqua;
+}
+
+.award-block {
+  /* background-color: red; */
+}
+
+.award-details {
+  /* background-color: lightgreen; */
+}
+
+.skills {
+  background-color: aqua;
+}
+
+.skills-list {
+  background-color: red;
+}
+
+.award-block {
+  display: grid;
+  grid-template-columns: 30% 62.5%;
+  grid-column-gap: 10px;
+}
+
+.title-styling {
+  background-color: red;
+  margin-right: 20px;
+  max-width: 300px;
+  font-size: 20px;
+}
+
+.colors {
+  background-color: lightgreen;
+}
+
+.skills-block {
+  display: grid;
+  grid-template-columns: 30% 62.5%;
+  grid-column-gap: 10px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /* display: inline; */
+  background-color: lightgray;
+}
+
+.nav-item {
+  display: inline;
+  padding-left: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+}
