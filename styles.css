@@ -1,11 +1,58 @@
+/* ============================= */
+/* 1. Responsive Base Rules */
+/* ============================= */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* background-color: green; */
   font-family: monospace;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* 2. Navigation */
+/* ============================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: aqua;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: lightgray;
+}
+
+/* Mobile: stack links vertically */
+.nav-item {
+  display: block;
+  padding: 10px 0;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* ============================= */
+/* 3. Header */
+/* ============================= */
 
 .full-name {
   background-color: lightblue;
@@ -18,6 +65,10 @@ body {
   text-align: center;
   margin-top: 0;
 }
+
+/* ============================= */
+/* 4. Photo Section */
+/* ============================= */
 
 .photo {
   background-color: aqua;
@@ -34,9 +85,13 @@ body {
 
 .svg-icon {
   background-color: orange;
-  width: 75x;
-  height: 75px;
+  width: 50px;
+  height: 50px;
 }
+
+/* ============================= */
+/* 5. About Section */
+/* ============================= */
 
 .about {
   background-color: aqua;
@@ -46,9 +101,9 @@ body {
   background-color: red;
 }
 
-.education-details {
-  /* background-color: lightgreen; */
-}
+/* ============================= */
+/* 6. Education Section */
+/* ============================= */
 
 .education {
   background-color: aqua;
@@ -56,9 +111,8 @@ body {
 
 .school-dates {
   background-color: red;
-  margin-right: 20px;
-  max-width: 300px;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .education-description {
@@ -76,22 +130,23 @@ body {
   margin-top: 0;
 }
 
+/* Mobile: stack content vertically */
 .education-block {
-  display: grid;
-  grid-template-columns: 30% 62.5%;
-  grid-column-gap: 10px;
-
+  display: block;
 }
 
+/* ============================= */
+/* 7. Work Experience Section */
+/* ============================= */
+
 .work-experience {
-  background-color: aqua
+  background-color: aqua;
 }
 
 .employment-dates {
   background-color: red;
-  margin-right: 20px;
-  max-width: 300px;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .position {
@@ -106,26 +161,17 @@ body {
 }
 
 .responsibilities {
-  background-color: lightgreen
+  background-color: lightgreen;
 }
 
+/* Mobile: stack content vertically */
 .work-block {
-  display: grid;
-  grid-template-columns: 30% 62.5%;
-  grid-column-gap: 10px;
+  display: block;
 }
 
-.awards {
-  background-color: aqua;
-}
-
-.award-block {
-  /* background-color: red; */
-}
-
-.award-details {
-  /* background-color: lightgreen; */
-}
+/* ============================= */
+/* 8. Skills Section */
+/* ============================= */
 
 .skills {
   background-color: aqua;
@@ -135,48 +181,88 @@ body {
   background-color: red;
 }
 
-.award-block {
-  display: grid;
-  grid-template-columns: 30% 62.5%;
-  grid-column-gap: 10px;
-}
-
 .title-styling {
   background-color: red;
-  margin-right: 20px;
-  max-width: 300px;
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .colors {
   background-color: lightgreen;
 }
 
+/* Mobile: stack content vertically */
 .skills-block {
-  display: grid;
-  grid-template-columns: 30% 62.5%;
-  grid-column-gap: 10px;
+  display: block;
 }
+
+/* ============================= */
+/* 9. Awards Section */
+/* ============================= */
+
+.awards {
+  background-color: aqua;
+}
+
+.award-block {
+  display: block;
+}
+
+.award-details {
+  /* No layout-specific change for mobile */
+}
+
+/* ============================= */
+/* 10. Footer */
+/* ============================= */
 
 .footer {
   text-align: center;
 }
 
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  /* display: inline; */
-  background-color: lightgray;
-}
+/* ============================= */
+/* 11. Larger Screens (Tablet & Desktop) */
+/* ============================= */
 
-.nav-item {
-  display: inline;
-  padding-left: 20px;
-}
+@media (min-width: 768px) {
+  /* Navigation: horizontal layout */
+  .nav-item {
+    display: inline;
+    padding-left: 20px;
+  }
 
-.link {
-  text-decoration: none;
-  font-size: 20px;
+  /* Education: two-column layout */
+  .education-block {
+    display: grid;
+    grid-template-columns: 30% 62.5%;
+    grid-column-gap: 10px;
+  }
+
+  /* Work Experience: two-column layout */
+  .work-block {
+    display: grid;
+    grid-template-columns: 30% 62.5%;
+    grid-column-gap: 10px;
+  }
+
+  /* Skills: two-column layout */
+  .skills-block {
+    display: grid;
+    grid-template-columns: 30% 62.5%;
+    grid-column-gap: 10px;
+  }
+
+  /* Awards: two-column layout */
+  .award-block {
+    display: grid;
+    grid-template-columns: 30% 62.5%;
+    grid-column-gap: 10px;
+  }
+
+  /* School dates and titles in two-column layout */
+  .school-dates,
+  .employment-dates,
+  .title-styling {
+    margin-right: 20px;
+  }
 }
