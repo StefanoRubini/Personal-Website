@@ -8,13 +8,16 @@
 </head>
 <body>
   <nav>
-    <ul class="navigation">
-      <li class="nav-item"><a href="#about" class="link">About</a></li>
-      <li class="nav-item"><a href="#education" class="link">Education</a></li>
-      <li class="nav-item"><a href="#work-experience" class="link">Work Experience</a></li>
-      <li class="nav-item"><a href="#skills" class="link">Skills</a></li>
-      <li class="nav-item"><a href="#awards" class="link">Awards</a></li>
-    </ul>
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="navigation" id="navigation">
+        <li class="nav-item"><a href="#about" class="link">[About]</a></li>
+        <li class="nav-item"><a href="#education" class="link">[Education]</a></li>
+        <li class="nav-item"><a href="#work-experience" class="link">[Work Experience]</a></li>
+        <li class="nav-item"><a href="#skills" class="link">[Skills]</a></li>
+        <li class="nav-item"><a href="#awards" class="link">[Awards]</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header>
@@ -44,25 +47,44 @@
     </section>
 
     <section class="about" id="about">
-      <h1>About ℹ️</h1>
+      <h1 class="section-header">About ℹ️</h1>
 
       <div class="about-block">
         <p class="about-paragraph">
-          Paragraph #1
+          Hello there, welcome to my personal website! You will find the most up-to-date information
+          regarding my academic and career endeavors on this site, where the design of the website will
+          be familiar to those who use Visual Studio Code often. This website was structured, styled and
+          given functionality using HTML, CSS, and JavaScript, as I am learning web development and wanted
+          to learn the fundamental tools used to create websites. I am a firm believer that learning the
+          fundamentals first is important before moving onto higher level languages and frameworks. With
+          the completion of this website, I feel much more confident with moving forward with utilizing
+          modern technologies and frameworks for web development.
 
           <br>
           <br>
-          Paragraph #2
+          I was born and raised in Las Vegas, Nevada, where I attended Chaparral High School from August
+          2015 to May 2019, where I graduated with Advanced Honors. After graduating from high school, I
+          immediately continued my education at the University of Nevada, Las Vegas Honors College, where
+          I attended from August 2019 to December 2024 in pursuit of my Computer Science degree, where I
+          graduated with University Honors and Magna Cum Laude. Currently, I am looking for work as a
+          software engineer, where I would love to continue learning new technology, tools, and information,
+          as I would love to continue developing my skills and problem solving abilities further.
           
           <br>
           <br>
-          Paragraph #3
+          With regards to my personal life, I enjoy spending time with my girlfriend, friends, and family
+          and going out to try new things and experiences. One of my favorite pastimes is going to a coffee
+          shop or library and sitting down to learn a new programming language or improve my problem solving
+          skills through LeetCode. Additionally, I love to visit new parks in Las Vegas and walking around
+          while listening to music, as it helps to clear my mind and enjoy life. Furthermore, nothing beats
+          driving around the city of Las Vegas with the windows rolled down on the rare occasions where it
+          is cloudy and the weather is cool, and being able to enjoy life and its endless beauty.
         </p>
       </div>
     </section>
 
     <section class="education" id="education">
-      <h1>Education 🎓</h1>
+      <h1 class="section-header">Education 🎓</h1>
       
       <div class="education-block">
         <p class="school-dates">August 2019 - December 2024</p>
@@ -82,7 +104,7 @@
 
         <div class="education-details">
           <h1 class="school-name">Chaparral High School</h1>
-          <p class="degree-name"><i>Advanced Honors Dimploma</i></p>
+          <p class="degree-name"><i>Advanced Honors Diploma</i></p>
 
           <p class="education-description">
             Attended Chaparral High School from August 2015 to May 2019. Graduated with the Advanced Honors Diploma with the Nevada Seal of Biliteracy.
@@ -92,7 +114,7 @@
     </section>
 
     <section class="work-experience" id="work-experience">
-      <h1>Work Experience 💼</h1>
+      <h1 class="section-header">Work Experience 💼</h1>
 
       <div class="work-block">
         <p class="employment-dates">January 2024 - December 2024</p>
@@ -142,7 +164,7 @@
 
         <div class="employment-details">
           <h1 class="position">Crew Trainer</h1>
-          <p class="employer-name"><i>McDonalds</i></p>
+          <p class="employer-name"><i>McDonald's</i></p>
 
           <ul class="responsibilities">
             <li>Provided training for new hires and taught/enforced proper work protocols and regulations.</li>
@@ -154,28 +176,28 @@
     </section>
 
     <section class="skills" id="skills">
-      <h1>Skills 🌟</h1>
+      <h1 class="section-header">Skills 🌟</h1>
 
       <div class="skills-block">
         <p class="title-styling">Hard Skills</p>
 
         <ul class="colors">
-          <li>
+          <li class="list-title">
             Object Oriented Programming
             <ul>
-              <li>C++, Java</li>
+              <li class="list-element">C++, Java</li>
             </ul>
           </li>
-          <li>
+          <li class="list-title">
             Web Development
             <ul>
-              <li>HTML, CSS, JavaScript</li>
+              <li class="list-element">HTML, CSS, JavaScript</li>
             </ul>
           </li>
-          <li>
+          <li class="list-title">
             Data/Statistical Analysis
             <ul>
-              <li>R</li>
+              <li class="list-element">R</li>
             </ul>
           </li>
         </ul>
@@ -184,7 +206,7 @@
       <div class="skills-block">
         <p class="title-styling">Soft Skills</p>
 
-        <ul class="colors">
+        <ul class="list-elements">
           <li>Clear Communication</li>
           <li>Attention to Detail</li>
           <li>Adaptability</li>
@@ -195,7 +217,7 @@
     </section>
 
     <section class="awards" id="awards">
-      <h1>Awards 🏆</h1>
+      <h1 class="section-header">Awards 🏆</h1>
 
       <div class="award-block">
         <p class="title-styling">UNLV Dean's List</p>
@@ -208,7 +230,7 @@
               is a list of every semester in which I was given recognition on the Dean's Honor List.
 
               <ul>
-                <li>Fall 2019, Spring 2020, Fall 2020, Spring 2022, Fall 2022, Fall 2023, Spring 2024, Fall 2024</li>
+                <li class="years">Fall 2019, Spring 2020, Fall 2020, Spring 2022, Fall 2022, Fall 2023, Spring 2024, Fall 2024</li>
               </ul>
             </li>
           </ul>
@@ -226,6 +248,10 @@
               recipient. The program duration is 8 semesters, in which students are <b>required</b> to maintain full-time
               enrollment at UNLV every semester, maintain a 3.0 semester GPA, complete four hours of service weekly, serve
               as peer leaders to other UNLV undergraduate students/future scholars, etc.
+
+              <ul>
+                <li class="years">Enrolled at UNLV as a Success Scholar from Fall 2019 - Spring 2023 (full tenure)</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -239,9 +265,13 @@
             <li>
               The Hispanic Scholarship Fund (HSF) is a non-profit organization that provides financial assistance, mentorship,
               and career development resources to help students of Hispanic heritage pursue higher education and achieve their
-              full potential. With an annual acceptance rate of 10,000 scholars from a pool size of 100,000 students, I was
-              selected as a scholar from 2021 - 2023, where I was officially recognized as a HSF Scholar and given access to
-              resources exclusive to scholars.
+              full potential. With an annual acceptance rate of 10,000 scholars from a pool size of 100,000 students, students
+              who are selected as HSF Scholars are given exclusive resources to support their academic endeavors, such as
+              internships, webinars, career counseling, and scholarships ranging from $500 - $5000.
+
+              <ul>
+                <li class="years">Selected as an HSF Scholar from Fall 2021 - Fall 2023 (3x selected)</li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -252,5 +282,32 @@
   <footer class="footer">
     © 2025 Stefano Rubini - <i>All Rights Reserved</i>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navigation = document.getElementById('navigation');
+    const navLinks = document.querySelectorAll('.navigation .link');
+
+    // toggle menu when hamburger is clicked
+    hamburger.addEventListener('click', (event) => {
+      event.stopPropagation(); // prevent closing immediately
+      navigation.classList.toggle('active');
+    });
+
+    // close menu when a nav link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('active');
+      });
+    });
+
+    // close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      const isClickInside = event.target.closest('.nav-container');
+      if (!isClickInside && navigation.classList.contains('active')) {
+        navigation.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>

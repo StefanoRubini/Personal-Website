@@ -4,10 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
 }
 
 body {
   font-family: monospace;
+  background-color: #000000;
 }
 
 img {
@@ -27,8 +29,32 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* background-color: aqua; */
+  border: 2px solid #6E7681;
+  border-radius: 8px;
   padding: 10px 0;
-  background-color: aqua;
+  background-color: #2D2D30;
+}
+
+header {
+  border: 2px solid #6E7681;
+  border-radius: 8px;
+  margin: 20px 0;
+  /* padding: 10px 0; */
+}
+
+section {
+  border: 2px solid #6E7681;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .navigation {
@@ -36,18 +62,41 @@ nav {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
-/* Mobile: stack links vertically */
+/* Mobile: hide menu by default */
+.navigation {
+  display: none;
+  flex-direction: column;
+}
+
+.navigation.active {
+  display: flex;
+}
+
 .nav-item {
-  display: block;
   padding: 10px 0;
 }
 
 .link {
   text-decoration: none;
   font-size: 20px;
+  color: #569CD6;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #4EC9B0;
+}
+
+/* hamburger button styling */
+.hamburger {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: block;
 }
 
 /* ============================= */
@@ -55,15 +104,17 @@ nav {
 /* ============================= */
 
 .full-name {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   text-align: center;
   margin-bottom: 0;
+  color: #4EC9B0;
 }
 
 .information {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   text-align: center;
   margin-top: 0;
+  color: #C586C0;
 }
 
 /* ============================= */
@@ -71,7 +122,8 @@ nav {
 /* ============================= */
 
 .photo {
-  background-color: aqua;
+  /* background-color: aqua; */
+  background-color: #2D2D30;
 }
 
 .photo-container {
@@ -79,14 +131,19 @@ nav {
 }
 
 .icons-container {
-  background-color: red;
+  /* background-color: red; */
   text-align: center;
+  background-color: #2D2D30;
 }
 
 .svg-icon {
-  background-color: orange;
+  background-color: #569CD6;
   width: 50px;
   height: 50px;
+}
+
+.svg-icon:hover {
+  background-color: #4EC9B0;
 }
 
 /* ============================= */
@@ -94,11 +151,12 @@ nav {
 /* ============================= */
 
 .about {
-  background-color: aqua;
+  background-color: #2D2D30;
 }
 
 .about-paragraph {
-  background-color: red;
+  /* background-color: red; */
+  color: #6A9955;
 }
 
 /* ============================= */
@@ -106,31 +164,34 @@ nav {
 /* ============================= */
 
 .education {
-  background-color: aqua;
+  background-color: #2D2D30;
 }
 
 .school-dates {
-  background-color: red;
+  /* background-color: red; */
   font-size: 20px;
   margin-bottom: 5px;
+  color: #C586C0;
 }
 
 .education-description {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  color: #6A9955;
 }
 
 .school-name {
   font-size: 17px;
   margin-bottom: 0;
+  color: #569CD6;
 }
 
 .degree-name {
   font-size: 15px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: 0;
+  color: #CE9178;
 }
 
-/* Mobile: stack content vertically */
 .education-block {
   display: block;
 }
@@ -140,31 +201,34 @@ nav {
 /* ============================= */
 
 .work-experience {
-  background-color: aqua;
+  background-color: #2D2D30;
 }
 
 .employment-dates {
-  background-color: red;
+  /* background-color: red; */
   font-size: 20px;
   margin-bottom: 5px;
+  color: #C586C0;
 }
 
 .position {
   font-size: 17px;
   margin-bottom: 0;
+  color: #569CD6;
 }
 
 .employer-name {
   font-size: 15px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-top: 0;
+  color: #CE9178;
 }
 
 .responsibilities {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  color: #6A9955;
 }
 
-/* Mobile: stack content vertically */
 .work-block {
   display: block;
 }
@@ -174,7 +238,7 @@ nav {
 /* ============================= */
 
 .skills {
-  background-color: aqua;
+  background-color: #2D2D30;
 }
 
 .skills-list {
@@ -182,16 +246,25 @@ nav {
 }
 
 .title-styling {
-  background-color: red;
+  /* background-color: red; */
   font-size: 20px;
   margin-bottom: 5px;
+  color: #C586C0;
+}
+
+.list-title {
+  color: #CE9178;
+}
+
+.list-element, .list-elements {
+  color: #6A9955;
 }
 
 .colors {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
+  color: #6A9955;
 }
 
-/* Mobile: stack content vertically */
 .skills-block {
   display: block;
 }
@@ -201,15 +274,20 @@ nav {
 /* ============================= */
 
 .awards {
-  background-color: aqua;
+  /* background-color: aqua; */
+  background-color: #2D2D30;
 }
 
 .award-block {
   display: block;
 }
 
-.award-details {
-  /* No layout-specific change for mobile */
+.section-header {
+  color: #4EC9B0;
+}
+
+.years {
+  color: #CE9178;
 }
 
 /* ============================= */
@@ -218,6 +296,7 @@ nav {
 
 .footer {
   text-align: center;
+  color: #569CD6;
 }
 
 /* ============================= */
@@ -225,7 +304,17 @@ nav {
 /* ============================= */
 
 @media (min-width: 768px) {
-  /* Navigation: horizontal layout */
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: lightgray; */
+  }
+
   .nav-item {
     display: inline;
     padding-left: 20px;
@@ -259,7 +348,6 @@ nav {
     grid-column-gap: 10px;
   }
 
-  /* School dates and titles in two-column layout */
   .school-dates,
   .employment-dates,
   .title-styling {
